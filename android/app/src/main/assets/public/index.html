@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Alphabet Trainer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600&family=Comfortaa:wght@400;500;600&family=Rubik:wght@400;500;600&family=Varela+Round&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+      window.addEventListener('error', function(e) {
+        var diagnostics = document.getElementById('error-diagnostics') || document.createElement('div');
+        diagnostics.id = 'error-diagnostics';
+        diagnostics.style = 'position:fixed;bottom:20px;left:20px;right:20px;background:#7f1d1d;color:#fef2f2;padding:15px;border-radius:8px;z-index:999999;font-family:monospace;font-size:12px;max-height:50vh;overflow:auto;box-shadow:0 10px 15px -3px rgba(0,0,0,0.5);border:1px solid #f87171;';
+        diagnostics.innerHTML += '<div><strong>[Error]:</strong> ' + e.message + '<br><small>' + e.filename + ':' + e.lineno + '</small></div>';
+        document.body.appendChild(diagnostics);
+      });
+      window.addEventListener('unhandledrejection', function(e) {
+        var diagnostics = document.getElementById('error-diagnostics') || document.createElement('div');
+        diagnostics.id = 'error-diagnostics';
+        diagnostics.style = 'position:fixed;bottom:20px;left:20px;right:20px;background:#7f1d1d;color:#fef2f2;padding:15px;border-radius:8px;z-index:999999;font-family:monospace;font-size:12px;max-height:50vh;overflow:auto;box-shadow:0 10px 15px -3px rgba(0,0,0,0.5);border:1px solid #f87171;';
+        diagnostics.innerHTML += '<div><strong>[Promise Rejection]:</strong> ' + (e.reason ? (e.reason.message || e.reason) : 'No reason') + '</div>';
+        document.body.appendChild(diagnostics);
+      });
+    </script>
+  <script type="module" crossorigin src="./assets/index-CEQu-K94.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-CMXLtfiY.css">
+</head>
+<body class="bg-neutral-900" style="font-family: 'Nunito', sans-serif;">
+    <div id="root"></div>
+</body>
+</html>
